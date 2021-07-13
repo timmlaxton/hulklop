@@ -110,6 +110,21 @@ img {
   font-size: 16px;
 }
 
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -mozilla-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+}
+
 .showcase-form input:focus {
   outline: none;
 }
